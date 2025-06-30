@@ -42,7 +42,7 @@ if e1!= "f not ph" and e1!= "F not PH":
      while True:
         print ("UNRIGHT")
 E3=input  ("what is this key ")
-if E3!= "space" or E3!= "space key":
+if E3!= "space" and E3!= "space key":
     while True:
         print ("UNRIGHT")
 else: 
