@@ -23,6 +23,7 @@ def makeboard (List):
     List [8] [2]="[-]"
     List [9] [6]="[-]"
     List [9] [7]="cpu"
+    
     for i in range (10):
         List [1] [2+i]="___"
 
@@ -68,6 +69,22 @@ def reason(reason,index):
     if pick==3:
         print("wrong u did very bad ok now u can only attack no mre spareing for u dont even try.  ")
         return "f"
+    
+def move (x,y,movement):
+    if movement=="w":
+        y=y-1
+    if movement=="a":
+        x=x-1
+    if movement=="s":
+        y=y+1
+    if movement=="d":
+        x=x+1
+    
+print("welcome to MANHOLE. YOU CAN FIGHT MOVE and more. spare for aurmour, kill for weapons.")
+print(" if you find a infinite damegae glich press F3 to report it. also... we now every thing and can tell if you lie.")
+print("please chose what your heart wants you to. we are taking your disions and making AI to take over the world.")
+print("  when you have killed cpu? please ask did you get all that a we will respond also if you die in here you die in here. what did you think you would die out there nope.")
+print( "i mean the AI will take oevr and your fate will be dersided then so...um /entermanholethegamecodeexe.net")
 
 
 board=[]
