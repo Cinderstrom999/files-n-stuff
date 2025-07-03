@@ -2,9 +2,9 @@ x=1
 y=1 
 import random 
 def makeboard (List):
-    for i in range (12):
+    for i in range (20):
         temp=[]
-        for x in range (12): 
+        for x in range (20): 
             temp.append (" - ")
         List.append (temp)
     List [6] [5]="[-]"
@@ -24,15 +24,22 @@ def makeboard (List):
     List [8] [2]="[-]"
     List [9] [6]="[-]"
     List [9] [7]="cpu"
+    List [10] [3]="fun"
+    List [19] [18]="nom"
+    List [19] [19]="win"
+    List [12] [4]="cols" 
     
-    for i in range (10):
+    
+    
+    
+    for i in range (18):
         List [1] [2+i]="___"
 
 
 
 def displayboard (List):
-    for i in range (12):
-        for x in range (12):
+    for i in range (20):
+        for x in range (20):
             print (List[i][x],end="")
         print()
 
@@ -86,26 +93,25 @@ def move (x,y,movement):
         return x 
     
     
-print("welcome to MANHOLE. YOU CAN FIGHT MOVE and more. spare for aurmour, kill for weapons.")
-print(" if you find a infinite damegae glich press F3 to report it. also... we now every thing and can tell if you lie.")
-print("please chose what your heart wants you to. we are taking your disions and making AI to take over the world.")
-print("  when you have killed cpu? please ask did you get all that a we will respond also if you die in here you die in here. what did you think you would die out there nope.")
-print( "i mean the AI will take over and your fate will be dersided then so...um /entermanholethegamecodeexe.net.AI=coolbois./run")
-
-
-
-
 board=[]
-makeboard (board)
+makeboard(board)
+x=1
+y=1 
 while True:
     board [y] [x]=" u "
     displayboard(board)
     board [y] [x]= " - "
-    walk=input ("walk")
-    if walk=="a" or walk=="d":
-        x=move(x,y, walk.lower())
-    else:
-        y=move(x,y, walk.lower())
+    while True:
+        walk=input ("walk")
+        if walk=="a" or walk=="d":
+            x=move(x,y, walk.lower())
+            break
+    
+        elif walk =="w" or walk=="s":
+            y=move(x,y, walk.lower())
+            break
+        else:
+            continue
     print (x)
     print (y)
 
