@@ -96,17 +96,27 @@ print( "i mean the AI will take over and your fate will be dersided then so...um
 
 
 board=[]
-makeboard (board)
+makeboard(board)
+x=1
+y=1 
 while True:
     board [y] [x]=" u "
     displayboard(board)
     board [y] [x]= " - "
-    walk=input ("walk")
-    if walk=="a" or walk=="d":
-        x=move(x,y, walk.lower())
-    else:
-        y=move(x,y, walk.lower())
+    while True:
+        walk=input ("walk")
+        if walk=="a" or walk=="d":
+            x=move(x,y, walk.lower())
+            break
+    
+        elif walk =="w" or walk=="s":
+            y=move(x,y, walk.lower())
+            break
+        else:
+            continue
     print (x)
     print (y)
+
+    
 
     

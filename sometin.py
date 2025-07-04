@@ -26,7 +26,7 @@ if C!= "?":
 q5=input ("what do thy be blocked ")
 if q5!= "HYPERLINKED":
     while True:
-            print ("UNRIGHT")
+            print ("you are noe hyperlinck blocked")
 crule=input ("2 anwers this time HAhhaaAAAhhhhAAHhhaAahAahAHaAHAahA ")
 List=crule.split(", ")
 if "2" not in List or "anwers"not in List:
@@ -41,6 +41,11 @@ e1=input (" what do thy bee with unright this word? fone ")
 if e1!= "f not ph" and e1!= "F not PH":
      while True:
         print ("UNRIGHT")
+word=input ("WHAT IS THIS:FUBNGDXHGPOUXNvbdfjvihnezirgf.ludrxgbzld")
+if word!= "qwerty fun":
+    while True:
+         print ("UNRIGHT")
+
 E3=input  ("what is this key ")
 if E3!= "space" and E3!= "space key":
     while True:
@@ -48,4 +53,3 @@ if E3!= "space" and E3!= "space key":
 else: 
   while True:
      print ("correct u win yayayayayayayyayayayayayayayayayyaayy ")
-    
