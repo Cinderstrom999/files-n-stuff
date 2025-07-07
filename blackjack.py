@@ -41,17 +41,27 @@ playerhand=[]
 notsoAI=[]
 playedcards=[]
 
+
+
+
+
+
+
+
 card = bellagio[random.randint(0,49)]
 playerhand.append(card) 
 playedcards.append(card)
 while True:
-    sec_card = bellagio[random.randint(0,49)] 
+    sec_card = bellagio[random.randint(0,49)]
+    if sec_card in playedcards:
+        continue 
+    playerhand.append(sec_card) 
+    playedcards.append(sec_card)
+    break
 
 
 
 
-
-g
 
 
 
