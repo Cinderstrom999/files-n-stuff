@@ -33,8 +33,7 @@ bellagio.append("oceans joker")
 
 
 round = False
-dracsplayed1=[]
-dracsplayed2 = []
+dracsplayed=[]
 player1 = []
 player2 = []
 bank1 = 0
@@ -48,14 +47,14 @@ print ("player 1 turn XD")
 bank1=int(input("how much $$$"))
 drac=bellagio[random.randint(0,49)]
 player1.append(drac)
-dracsplayed1.append(drac)
+dracsplayed.append(drac)
 
 while True:
     ndrac = bellagio[random.randint(0,49)]
-    if ndrac in dracsplayed1:
+    if ndrac in dracsplayed:
         continue
     player1.append(ndrac)
-    dracsplayed1.append(ndrac)
+    dracsplayed.append(ndrac)
     break
 
 print(player1)
@@ -73,14 +72,14 @@ print ("player 2 turn XD")
 bank2=int(input("how much $$$"))
 drac=bellagio[random.randint(0,49)]
 player2.append(drac)
-dracsplayed2.append(drac)
+dracsplayed.append(drac)
 
 while True:
     ndrac = bellagio[random.randint(0,49)]
-    if ndrac in dracsplayed2:
+    if ndrac in dracsplayed:
        continue
     player2.append(ndrac)
-    dracsplayed2.append(ndrac)
+    dracsplayed.append(ndrac)
     break
 
 print("u drew "+drac + " sounds nice")
