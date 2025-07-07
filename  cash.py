@@ -29,34 +29,73 @@ for i in range (10):
                 bellagio.append(card)
 bellagio.append("joker")
 print (bellagio)
-
 bellagio.append("oceans joker")
 
 
-
 round = False
-dracsplayed=[]
+dracsplayed1=[]
+dracsplayed2 = []
 player1 = []
 player2 = []
-bank = 0
+bank1 = 0
+bank2 = 0
 player1bank = 500
 player2bank = 555
 richboibank = 999
 
-while True:
-    if round==False:
+print ("new round")
+print ("player 1 turn XD")
+bank1=int(input("how much $$$"))
+drac=bellagio[random.randint(0,49)]
+player1.append(drac)
+dracsplayed1.append(drac)
 
-        print ("player 1 turn XD")
-        drac=bellagio[random.randint(0,48)]
-        player1.append(drac)
-        dracsplayed.append(drac)
-        print("u drew "+drac + " sounds nice")
-        if drac == "joker":
-            print("congr]tasg[s [yiot]iuu w[ion]")
-            player1bank+=bank
-        elif drac == "oceans joker":
-            print("u lose, remember kids 99.9999999999999% of gambelers quit befoere they win big!!!")
-            richboibank+=bank
+while True:
+    ndrac = bellagio[random.randint(0,49)]
+    if ndrac in dracsplayed1:
+        continue
+    player1.append(ndrac)
+    dracsplayed1.append(ndrac)
+    break
+
+print(player1)
+if "joker" in player1:
+    print("congr]tasg[s [yiot]iuu w[ion]")
+    player1bank+=bank1
+    richboibank-=bank1 
+
+elif "oceans joker" in player1:
+    print("u lose, remember kids 99.9999999999999% of gambelers quit befoere they win big!!!")
+    richboibank+=bank1
+    player1bank-=bank1
+
+print ("player 2 turn XD")
+bank2=int(input("how much $$$"))
+drac=bellagio[random.randint(0,49)]
+player2.append(drac)
+dracsplayed2.append(drac)
+
+while True:
+    ndrac = bellagio[random.randint(0,49)]
+    if ndrac in dracsplayed2:
+       continue
+    player2.append(ndrac)
+    dracsplayed2.append(ndrac)
+    break
+
+print("u drew "+drac + " sounds nice")
+if "joker" in player2:
+    print("congr]tasg[s [yiot]iuu w[ion]")
+    player2bank+=bank2
+    richboibank-=bank2 
+    
+elif "oceans joker" in player2:
+    print("u lose, remember kids 99.9999999999999% of gambelers quit befoere they win big!!!")
+    richboibank+=bank2
+    player2bank-=bank2
+            
+while True:
+    
         
 
 
