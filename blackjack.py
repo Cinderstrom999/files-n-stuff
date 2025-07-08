@@ -1,16 +1,25 @@
 
 import random 
+import time
 
 def addCards(urhund):
     totalValue = 0
-    for i in range (len(urhund)):
+    for i in range(len(urhund)):
         hund=urhund[i].split(" ")
         try:
             hundy = int(hund [0])
         except:
             hundy = 10
         totalValue += hundy
-        return totalValue
+    return totalValue
+
+def checkWin(urhund, theyhund):
+    print (":P")
+    hunds= addCards(urhund)
+    hundys=addCards(theyhund)
+    if hunds>hundys:
+        return True
+    return False       
 
 
 print(":D")
@@ -48,69 +57,92 @@ bellagio.append("oceans joker")
 
 
 print (":l")
-
-playerhand=[]
-notsoAI=[]
-playedcards=[]
-
-
-
-
-
-
-card = bellagio[random.randint(0,49)]
-playerhand.append(card) 
-playedcards.append(card)
 while True:
-    sec_card = bellagio[random.randint(0,49)]
-    if sec_card in playedcards:
-        continue 
-    playerhand.append(sec_card) 
-    playedcards.append(sec_card)
-    break
-print ("breadO:")
-comp_card = bellagio[random.randint(0,49)]
-notsoAI.append(comp_card) 
-playedcards.append(comp_card)
-while True:
-    sec_card = bellagio[random.randint(0,49)]
-    if sec_card in playedcards:
-        continue 
-    notsoAI.append(sec_card) 
-    playedcards.append(sec_card)
-    break
-print ("breadO:")
+    playerstate = True
+    compstate = True
+    playerhand=[]
+    notsoAI=[]
+    playedcards=[]
 
-playerstate = True
-compstate = True
-while True:
-    hundvalue = addCards(playerhand)
-    notsoAIvalve= addCards(notsoAI)
-    if hundvalue >21:
-        print ("ur hund busted remeber kids 99% of gambelers win big U SUCK try agin")
+    card = bellagio[random.randint(0,49)]
+    playerhand.append(card) 
+    playedcards.append(card)
+    while True:
+        sec_card = bellagio[random.randint(0,49)]
+        if sec_card in playedcards:
+            continue 
+        playerhand.append(sec_card) 
+        playedcards.append(sec_card)
         break
-    if notsoAIvalve >21:
-        print ("AI hund busted remeber kids 99% of gambelers win big and so do u")
+
+    comp_card = bellagio[random.randint(0,49)]
+    notsoAI.append(comp_card) 
+    playedcards.append(comp_card)
+    while True:
+        sec_card = bellagio[random.randint(0,49)]
+        if sec_card in playedcards:
+            continue 
+        notsoAI.append(sec_card) 
+        playedcards.append(sec_card)
         break
-    if hundvalue==21:   
-        print ("21 WOOOOOOO PARTY U WIN 20 WUUUUUUUUUUUN YAYAYYAYA")
-        break
-    if notsoAIvalve==21:
-        print ("AI hund got 21 remeber kids 99% of gambelers win big U SUCK try agin")
-        break
-    playercose = input("more or all done")
-    if playercose== "more":
-        while True:
-            new_card = bellagio[random.randint(0,49)]
-            if new_card in playedcards:
-                continue 
-            playerhand.append(sec_card) 
-            playedcards.append(sec_card)
+
+
+    while True:
+        print()
+        print(playerhand)
+        hundvalue = addCards(playerhand)
+        notsoAIvalve= addCards(notsoAI)
+        print("Player card value: ", hundvalue)
+       
+        if hundvalue >21:
+            print ("ur hund busted remeber kids 99% of gambelers win big U SUCK try agin")
+            print("Computer card value: ", notsoAIvalve)
             break
-    else:
-        playerstate= False
-    
-    
-    if notsoAIvalve<=16:
+        if notsoAIvalve >21:
+            print ("AI hund busted remeber kids 99% of gambelers win big and so do u")
+            print("Computer card value: ", notsoAIvalve)
+            break
+        if hundvalue==21:   
+            print ("21 WOOOOOOO PARTY U WIN 20 WUUUUUUUUUUUN YAYAYYAYA")
+            print("Computer card value: ", notsoAIvalve)
+            break
+        if notsoAIvalve==21:
+            print ("AI hund got 21 remeber kids 99% of gambelers win big U SUCK try agin")
+            print("Computer card value: ", notsoAIvalve)
+            break
+        if playerstate == False and compstate == False:
+            if checkWin(playerhand, notsoAI):
+                print ("u win :D play aing or the D:'s will come 4 u ")
+                print("Computer card value: ", notsoAIvalve)
+                break
+            print ("i think ul win next time |: playanig")
+            print ("bonana eat mon mon gulp gulp yum!")
+            print("Computer card value: 1 wait how is thatn even posible? idk i blame the maker of this lousey game :P")
+            break   
+
+        if playerstate:
+            playercose = input("more or all done ")
         
+            if playercose== "more":
+                while True:
+                    new_card = bellagio[random.randint(0,49)]
+                    if new_card in playedcards:
+                        continue 
+                    playerhand.append(new_card) 
+                    playedcards.append(new_card)
+                    break
+            else:
+                playerstate= False 
+        
+        if notsoAIvalve<=16:
+            while True:
+                poo_card = bellagio[random.randint(0,49)]
+                if poo_card in playedcards:
+                    continue 
+                notsoAI.append(poo_card) 
+                playedcards.append(poo_card)
+                break
+        else:
+            compstate = False
+        time.sleep(1)
 
