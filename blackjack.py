@@ -1,6 +1,18 @@
 
 import random 
 
+def addCards(urhund):
+    totalValue = 0
+    for i in range (len(urhund)):
+        hund=urhund[i].split(" ")
+        try:
+            hundy = int(hund [0])
+        except:
+            hundy = 10
+        totalValue += hundy
+        return totalValue
+
+
 print(":D")
 bellagio=[]
 for i in range (10):
@@ -41,6 +53,11 @@ playerhand=[]
 notsoAI=[]
 playedcards=[]
 
+
+
+
+
+
 card = bellagio[random.randint(0,49)]
 playerhand.append(card) 
 playedcards.append(card)
@@ -64,9 +81,36 @@ while True:
     break
 print ("breadO:")
 
-
-
-
-
-
+playerstate = True
+compstate = True
+while True:
+    hundvalue = addCards(playerhand)
+    notsoAIvalve= addCards(notsoAI)
+    if hundvalue >21:
+        print ("ur hund busted remeber kids 99% of gambelers win big U SUCK try agin")
+        break
+    if notsoAIvalve >21:
+        print ("AI hund busted remeber kids 99% of gambelers win big and so do u")
+        break
+    if hundvalue==21:   
+        print ("21 WOOOOOOO PARTY U WIN 20 WUUUUUUUUUUUN YAYAYYAYA")
+        break
+    if notsoAIvalve==21:
+        print ("AI hund got 21 remeber kids 99% of gambelers win big U SUCK try agin")
+        break
+    playercose = input("more or all done")
+    if playercose== "more":
+        while True:
+            new_card = bellagio[random.randint(0,49)]
+            if new_card in playedcards:
+                continue 
+            playerhand.append(sec_card) 
+            playedcards.append(sec_card)
+            break
+    else:
+        playerstate= False
+    
+    
+    if notsoAIvalve<=16:
+        
 
