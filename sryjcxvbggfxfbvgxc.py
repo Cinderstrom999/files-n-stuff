@@ -72,18 +72,11 @@ while True:
     print ("")
     print ("new reounD:")
 
-    if chasebankdebt:
-        if boodget>=100000:
-            print("close call dont try us angin hahhahahahahhahahahahahahahahahahahahahahahahtakesbreathhahahahahahahahahahhahaahahahahahahahhahahahahahahahahahahahahahahaha")
-            boodget-=100000
-        else:
-            while True:
-                print ("U R NOW KIDNAPPED HOPE U HAVE FUN WITH THE REST OF THEM")
 
-    if boodget<=-1000:
-        print ("bank of saba wants its dollor sign back make 100000dollars in 1 trun or else")
-        print ("- afsonso saba")
-        chasebankdebt = True
+    if boodget<=-1:
+        while True:
+            print (" ")
+
     print ("you have ",boodget," 'insert dollar symbalo here'")
     cashdotpy=int(input("how much 'insert dollar symbal' u want back or lose also if you get -10000 banl< of sabas goons come 4 u "))
 
