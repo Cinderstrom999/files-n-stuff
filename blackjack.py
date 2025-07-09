@@ -51,12 +51,13 @@ for i in range (10):
                 bellagio.append(card)
 bellagio.append("joker")
 print (bellagio)
-bellagio.append("oceans joker")
+bellagio.append("glass joker")
 
 
+print (":D")
+boodget=300
+buget=99999999999999
 
-
-print (":l")
 while True:
     playerstate = True
     compstate = True
@@ -67,7 +68,13 @@ while True:
     card = bellagio[random.randint(0,49)]
     playerhand.append(card) 
     playedcards.append(card)
+    print ("")
+    print ("new reounD:")
+    print ("you have ",boodget," 'insert dollar symbalo here'")
+    cashdotpy=int(input("how much 'insert dollar symbal' u want back or lose "))
+
     while True:
+      
         sec_card = bellagio[random.randint(0,49)]
         if sec_card in playedcards:
             continue 
@@ -93,31 +100,55 @@ while True:
         hundvalue = addCards(playerhand)
         notsoAIvalve= addCards(notsoAI)
         print("Player card value: ", hundvalue)
-       
+        
+        if "glass joker" in playerhand:
+            DX=random.randint(1,4)
+            if DX==3:
+                boodget-=100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            else:
+                boodget+=(100+cashdotpy)
+                print ("U GOT GLASS JOKER u win also u wont get so luck next time (glass joker shattering sound)")
+                break
+
+        
+        if  "joker" in playerhand:
+            print ("congr]tasg[s [yiot]iuu w[ion]")
+            boodget+=cashdotpy
+            break
+        if "joker" in notsoAI: 
+            while True:
+                print ("A{iII] win bu[gin] sour{seeeeeeeee) codde power [off]ing cgjhfs bvhjdxz")
         if hundvalue >21:
             print ("ur hund busted remeber kids 99% of gambelers win big U SUCK try agin")
             print("Computer card value: ", notsoAIvalve)
+            boodget-=cashdotpy
             break
+    
         if notsoAIvalve >21:
             print ("AI hund busted remeber kids 99% of gambelers win big and so do u")
             print("Computer card value: ", notsoAIvalve)
+            boodget+=cashdotpy
             break
         if hundvalue==21:   
             print ("21 WOOOOOOO PARTY U WIN 20 WUUUUUUUUUUUN YAYAYYAYA")
             print("Computer card value: ", notsoAIvalve)
+            boodget+=cashdotpy*2
             break
         if notsoAIvalve==21:
             print ("AI hund got 21 remeber kids 99% of gambelers win big U SUCK try agin")
             print("Computer card value: ", notsoAIvalve)
+            boodget-=cashdotpy*2
             break
         if playerstate == False and compstate == False:
             if checkWin(playerhand, notsoAI):
                 print ("u win :D play aing or the D:'s will come 4 u ")
                 print("Computer card value: ", notsoAIvalve)
+                boodget+=cashdotpy
                 break
             print ("i think ul win next time |: playanig")
             print ("bonana eat mon mon gulp gulp yum!")
             print("Computer card value: 1 wait how is thatn even posible? idk i blame the maker of this lousey game :P")
+            boodget-=cashdotpy/2
             break   
 
         if playerstate:
