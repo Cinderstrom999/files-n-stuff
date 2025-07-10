@@ -9,7 +9,7 @@ if Dface=="stopwatch":
 
 elif Dface=="SUPER SECRET":
     print ("japan is at") 
-     while True:
+    while True:
         print (time.ctime(time.time()+32400))
         time.sleep(1)
 
@@ -30,7 +30,7 @@ elif Dface== "z4a3qx2s1":
 
 
 
-elif Dface== "xd":
+elif Dface== "code":
     print ("welcome :D agent here is your misson in code >:O D:< O: /: <: =D =P :P :O |: C= XD :( :V :Y =F => i wish u luck agent D: out")
 
 
