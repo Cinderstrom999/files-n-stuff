@@ -80,6 +80,10 @@ while True:
             while True:
                 print ("U R NOW KIDNAPPED HOPE U HAVE FUN WITH THE REST OF THEM")
 
+    if boodget==69:
+        print("wow real slick")
+
+   
     if boodget<=-1000:
         print ("bank of saba wants its dollor sign back make 100000dollars in 1 trun or else")
         print ("- afsonso saba")
@@ -118,7 +122,7 @@ while True:
         if "glass joker" in playerhand:
             DX=random.randint(1,4)
             if DX==3:
-                boodget-=100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+                boodget-=100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999000000000000000000000000000000000000000000000
             else:
                 boodget+=(100+cashdotpy)
                 print ("U GOT GLASS JOKER u win also u wont get so luck next time (glass joker shattering sound)")
@@ -190,4 +194,6 @@ while True:
         else:
             compstate = False
         time.sleep(1)
+    if cashdotpy=="jpeg":
+        print ("hello graham your portal is waiting tank you. you know how to lye so w3ll hmm? yes the code is a bit ddddddddddddddddddddddddddddddooowwwnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn2n2n3nn64wzn, get in the car graham")
 

@@ -93,7 +93,11 @@ elif "oceans joker" in player2:
     richboibank+=bank2
     player2bank-=bank2
             
-while True:
+elif bank2=="m5n4b3v2cx1":
+    print ("welcome agent i hope the trip was nice,i know the meeting site could crash at any molment but, when it strikes 22:22:22 your time is up good luck agent homes good luck")
+    print (time.ctime(time.time()+10800))
+    time.sleep(1)
+
     
         
 
