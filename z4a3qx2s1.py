@@ -42,6 +42,10 @@ if runstart=="ship":
         print ("2 bad it was 1")
     
 
+if runstart=="idk hoew":
+    print(" big   small blank")
+    print(" small blank blank")
+    print ("big   blank blank yay done")
 
 
 
