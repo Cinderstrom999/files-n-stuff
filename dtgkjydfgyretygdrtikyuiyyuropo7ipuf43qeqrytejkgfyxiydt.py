@@ -4,6 +4,7 @@ import random
 plalislf=0
 plalisud=0
 L=3
+sleep=random.randint(-100,250)
 p=7
 f=9
 gh=4
@@ -78,7 +79,7 @@ elif funno==101:
     os.system ("shutdown /s /t 1")
 
 
-exces=random.randint(0,82)
+exces=random.randint(0,1)
 if exces==0:
     score+=more
 #def move ()
@@ -90,10 +91,24 @@ if theothers==1:
     theother=100
 if playername=="martin":
     score=15
-if playername=="noah":
+elif playername=="noah":
     score+=theother
+elif playername=="graham":
+    score+=funno
+else:
+    print ("good luck and DONT GO CODE MINING")
+    print ("*vrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*")
+
+    
+    for i in range (4)
+    time.sleep (5.73264217645132976571983246571259871263)
+    score+=sleep 
+   
+
+
 
 #board=[]
+
 
 #akeboard(board)
 #board [x][y]="🐍"
