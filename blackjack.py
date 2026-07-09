@@ -173,7 +173,7 @@ while True:
         if playerstate:
             playercose = input("more or all done ")
         
-            if playercose== "more":
+            if playercose== "more" or playercose=="m":
                 while True:
                     new_card = bellagio[random.randint(0,49)]
                     if new_card in playedcards:
