@@ -4,6 +4,8 @@ import random
 plalislf=0
 plalisud=0
 L=3
+eat=0
+apple=[[plalislf-1, plalisud-1],[plalislf-2, plalisud-2],[plalislf-3, plalisud-3],[plalislf-4, plalisud-4],[plalislf-5, plalisud-5],[plalislf-6, plalisud-6]]
 sleep=random.randint(-100,250)
 p=7
 f=9
@@ -19,7 +21,9 @@ def conrononthecob(f1,f2 ):
     n3=f1+f2
     return (n3)
 def brooklyen(wasd):
-    global plalisud, plalislf
+    global plalisud, plalislf, apple
+    apple.insert(0, [plalislf, plalisud])
+    apple.pop(len(apple)-1 )
     if wasd=="d":
         plalisud+=1
 
@@ -122,10 +126,9 @@ for i in range (4):
 
 valiue=plalislf-1
 value=plalisud-1
+                                                                                                                                                             
+  #board=[].
 
-#board=[]
-eat=0
-apple=[[valiue, value],[valiue-1, value-1],[valiue-2, value-2]]
 #akeboard(board)
 #board [x][y]="🐍"
 print(plalislf)
@@ -134,20 +137,23 @@ while True:
 
 
     print (plalislf, plalisud,)
-    (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))
+    (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
     if dufffffffffffffffff=="w" or dufffffffffffffffff=="a" or dufffffffffffffffff=="s" or dufffffffffffffffff=="d":
         brooklyen(dufffffffffffffffff)
 
         for q in range (0, 20):
                 print ("")
                 for w in range (0, 20):
-
+                    tail=False
+                    for yy in range (len(apple)):
+                        if apple[yy][0]==q and apple[yy][1]==w:
+                            print ("🍏",end="")
+                            tail=True      
                     if  q==plalislf and w==plalisud:
                         print ("🍎",end="")
-                        #if eat==1:
-                    else:
+                    elif not tail:
                         print (lis[q][w],end="")        
-                        
+                
         if lis[plalislf][plalisud]=="🐍":
             score+=pain
             eat+=1

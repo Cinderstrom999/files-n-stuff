@@ -66,11 +66,10 @@ print(plalisud)
 
 while True:
     (espace)=input("         ")
-    brooklyen(e space)
-       for q in range (0, 20):
+    brooklyen(e, space)
+    for q in range (0, 20):
             print ("")
-            for w i n range (0, 20):
-
+            for w in range (0, 20):
                 if  q==sanck[0]and w==sanck[0]:
                     print ("s",end="")
-                else:print (lis[q][w],end="")
+            else:print (lis[q][w],end="")
