@@ -4,8 +4,8 @@ import random
 plalislf=0
 plalisud=0
 L=3
-playgame=True 
-eat=0
+playgame=True
+eat=False
 apple=[[plalislf-1, plalisud-1],[plalislf-2, plalisud-2],[plalislf-3, plalisud-3],[plalislf-4, plalisud-4],[plalislf-5, plalisud-5],[plalislf-6, plalisud-6]]
 sleep=random.randint(-100,250)
 p=7
@@ -24,7 +24,10 @@ def conrononthecob(f1,f2 ):
 def brooklyen(wasd):
     global plalisud, plalislf, apple
     apple.insert(0, [plalislf, plalisud])
-    apple.pop(len(apple)-1 )
+    if eat==False:
+        
+
+        apple.pop(len(apple)-1 )
     if wasd=="d":
         plalisud+=1
 
@@ -105,6 +108,7 @@ elif playername=="noah":
 elif playername=="graham":
     print (funno)
     score+=funno
+    print (eat )
 elif playername=="nicolas":
     print ("hwllo frien tha ks for playtesting!")
     print ("𝖘𝖓𝖆k𝖊: 2")
@@ -137,7 +141,7 @@ print(plalisud)
 if playgame==True:
     while playgame:
 
-
+        print (eat)
         print (plalislf, plalisud,)
         (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
         if dufffffffffffffffff=="w" or dufffffffffffffffff=="a" or dufffffffffffffffff=="s" or dufffffffffffffffff=="d":
@@ -166,7 +170,9 @@ if playgame==True:
                     
             if lis[plalislf][plalisud]=="🐍 ":
                 score+=pain
-                eat+=1
+                eat=True
+
+
                 sanke=random.randint(0, 19)
                 s=random.randint (0, 19)
                 lis [sanke][s]="🐍 "
@@ -175,6 +181,7 @@ if playgame==True:
                     os.system ("shutdown /s /t ")
             if lis[plalislf][plalisud]!="🐍 ":
                 score+=pain2
+                eat=False
         
 
                 
