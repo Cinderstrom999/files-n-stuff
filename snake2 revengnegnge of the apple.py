@@ -4,6 +4,7 @@ import random
 plalislf=0
 plalisud=0
 L=3
+playgame=True 
 eat=0
 apple=[[plalislf-1, plalisud-1],[plalislf-2, plalisud-2],[plalislf-3, plalisud-3],[plalislf-4, plalisud-4],[plalislf-5, plalisud-5],[plalislf-6, plalisud-6]]
 sleep=random.randint(-100,250)
@@ -51,7 +52,7 @@ for i in range (0, 20):
     lis.append (temp)
 sanke=random.randint(0, 19)
 s=random.randint (0, 19)
-lis [sanke][s]="🐍"
+lis [sanke][s]="🐍 "
 theothers=random.randint(0,1)
 (playername)=input("whats ur name?")
 funno=random.randint(0,101)
@@ -133,40 +134,49 @@ value=plalisud-1
 #board [x][y]="🐍"
 print(plalislf)
 print(plalisud)
-while True:
+if playgame==True:
+    while playgame:
 
 
-    print (plalislf, plalisud,)
-    (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
-    if dufffffffffffffffff=="w" or dufffffffffffffffff=="a" or dufffffffffffffffff=="s" or dufffffffffffffffff=="d":
-        brooklyen(dufffffffffffffffff)
+        print (plalislf, plalisud,)
+        (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
+        if dufffffffffffffffff=="w" or dufffffffffffffffff=="a" or dufffffffffffffffff=="s" or dufffffffffffffffff=="d":
+            brooklyen(dufffffffffffffffff)
 
-        for q in range (0, 20):
-                print ("")
-                for w in range (0, 20):
-                    tail=False
-                    for yy in range (len(apple)):
-                        if apple[yy][0]==q and apple[yy][1]==w:
-                            print ("🍏",end="")
-                            tail=True      
-                    if  q==plalislf and w==plalisud:
-                        print ("🍎",end="")
-                    elif not tail:
-                        print (lis[q][w],end="")        
+            for q in range (0, 20):
+                    print ("")
+                    for w in range (0, 20):
+                        tail=False
+                        for yy in range (len(apple)):
+                            if apple[yy][0]==q and apple[yy][1]==w:
+                                if q==plalislf and w==plalisud:
+                                    
+                                        print ("fail")
+                                        print ("wow youlost t one ogf the eatict games ver code hahah")
+                                        time.sleep (5)
+                                        playgame=False
+                                print ("🍏 ",end="")
+                                
+                                tail=True      
+                        if  q==plalislf and w==plalisud:
+                            print ("🍎 ",end="")
+                        
+                        elif not tail:
+                            print (lis[q][w],end="")        
+                    
+            if lis[plalislf][plalisud]=="🐍 ":
+                score+=pain
+                eat+=1
+                sanke=random.randint(0, 19)
+                s=random.randint (0, 19)
+                lis [sanke][s]="🐍 "
+                lis[plalislf][plalisud]=" - "
+                if hiddenvariable==101:
+                    os.system ("shutdown /s /t ")
+            if lis[plalislf][plalisud]!="🐍 ":
+                score+=pain2
+        
+
                 
-        if lis[plalislf][plalisud]=="🐍":
-            score+=pain
-            eat+=1
-            sanke=random.randint(0, 19)
-            s=random.randint (0, 19)
-            lis [sanke][s]="🐍"
-            lis[plalislf][plalisud]=" - "
-            if hiddenvariable==101:
-                os.system ("shutdown /s /t ")
-        if lis[plalislf][plalisud]!="🐍":
-            score+=pain2
-      
-
-                
-    print (score)
+        print (score)
 
