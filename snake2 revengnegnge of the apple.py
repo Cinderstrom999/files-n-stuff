@@ -6,7 +6,7 @@ plalisud=0
 L=3
 playgame=True
 eat=False
-apple=[[plalislf-1, plalisud-1],[plalislf-2, plalisud-2],[plalislf-3, plalisud-3],[plalislf-4, plalisud-4],[plalislf-5, plalisud-5],[plalislf-6, plalisud-6]]
+apple=[[plalislf-1, plalisud-1],[plalislf-2, plalisud-2],[plalislf-3, plalisud-3],[plalislf-4, plalisud-4],[plalislf-5, plalisud-5],[plalislf-6, plalisud-6],]
 sleep=random.randint(-100,250)
 p=7
 f=9
@@ -23,11 +23,15 @@ def conrononthecob(f1,f2 ):
     return (n3)
 def brooklyen(wasd):
     global plalisud, plalislf, apple
+
     apple.insert(0, [plalislf, plalisud])
+    if eat==True:
+       apple.insert(2, [plalislf, plalisud])       
     if eat==False:
         
 
         apple.pop(len(apple)-1 )
+
     if wasd=="d":
         plalisud+=1
 
@@ -59,7 +63,7 @@ lis [sanke][s]="🐍 "
 theothers=random.randint(0,1)
 (playername)=input("whats ur name?")
 funno=random.randint(0,101)
-
+vgh=False
 more=0
 if funno<=10:
     more+=L
@@ -117,6 +121,11 @@ elif playername=="arlo":
     ("java is better!")
     time.sleep (0.5)
     os.system ("shutdown /s /t")
+elif playername=="jeffrey":
+    ("why do you speak l;ike thatbwhy do you laugh so much well hgod bye ")
+    time.sleep (7)
+    os.system ("shutdown /s /t 1")
+
 else:
     print ("good luck and DONT GO CODE MINING")
     print ("*vrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*")
@@ -124,8 +133,8 @@ else:
     print ("᥅ꫀꪜꫀꪀꫀꪀᧁꫀ ꪮᠻ ꪻꫝꫀ ꪖρρꪶꫀ")
 hiddenvariable=funno
 pain2=random.randint(-7,1)
-for i in range (4):
-    time.sleep (5.73264217645132976571983246571259871263)
+for i in range (1):
+    time.sleep (2.73264217645132976571983246571259871263)
     score+=sleep 
    
 
@@ -146,6 +155,7 @@ if playgame==True:
         (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
         if dufffffffffffffffff=="w" or dufffffffffffffffff=="a" or dufffffffffffffffff=="s" or dufffffffffffffffff=="d":
             brooklyen(dufffffffffffffffff)
+        
 
             for q in range (0, 20):
                     print ("")
@@ -163,6 +173,7 @@ if playgame==True:
                                 
                                 tail=True      
                         if  q==plalislf and w==plalisud:
+    
                             print ("🍎 ",end="")
                         
                         elif not tail:
@@ -171,6 +182,7 @@ if playgame==True:
             if lis[plalislf][plalisud]=="🐍 ":
                 score+=pain
                 eat=True
+                vgh==True
 
 
                 sanke=random.randint(0, 19)

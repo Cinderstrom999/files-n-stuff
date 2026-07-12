@@ -36,7 +36,7 @@ def move (x,y,movement):
     if movement=="d":
         x=x+1
         return x 
-    if 
+
     
     
 

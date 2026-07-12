@@ -7,6 +7,7 @@ q2=input ("e= what, hinht: think light bulb guy ")
 if q2!= "MC SQUARED":
     while True:
             print ("UNRIGHT")
+            print ("ur")
 q3=input ("please enter your credit card number ")
 if q3!= "WHAT NO":
     while True:
