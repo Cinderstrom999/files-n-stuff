@@ -43,10 +43,10 @@ def brooklyen(wasd):
         plalisud-=1
     if wasd=="s":
         plalislf+=1
-    if wasd=="h":
+    if wasd=="code":
         score+=1000
     if wasd=="q" or wasd=="e":
-        score+=-1000
+        k
 
    
 theother=0
@@ -106,6 +106,7 @@ if playername=="martin":
     score=15
     print ("𝖘𝖓𝖆k𝖊: 2")
     print ("᥅ꫀꪜꫀꪀꫀꪀᧁꫀ ꪮᠻ ꪻꫝꫀ ꪖρρꪶꫀ")
+    print ("your score is this number (my recod is 597)",score)
 elif playername=="noah":
     score+=theother
     print ("𝖘𝖓𝖆k𝖊: 2")
@@ -119,6 +120,7 @@ elif playername=="nicolas":
     print ("hwllo frien tha ks for playtesting!")
     print ("𝖘𝖓𝖆k𝖊: 2")
     print ("᥅ꫀꪜꫀꪀꫀꪀᧁꫀ ꪮᠻ ꪻꫝꫀ ꪖρρꪶꫀ")
+    print ("your score is this number (my recod is 597)",score)
 elif playername=="arlo":
     ("java is better!")
     time.sleep (0.5)
@@ -133,6 +135,7 @@ else:
     print ("*vrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*")
     print ("𝖘𝖓𝖆k𝖊: 2")
     print ("᥅ꫀꪜꫀꪀꫀꪀᧁꫀ ꪮᠻ ꪻꫝꫀ ꪖρρꪶꫀ")
+    print ("your score is this number (my recod is 597)",score)
 hiddenvariable=funno
 pain2=random.randint(-7,1)
 for i in range (1):
@@ -154,50 +157,57 @@ if playgame==True:
         print (pain )
         print (eat)
         print (plalislf, plalisud,)
+        print ("your score is this number ",score)
         (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
         if dufffffffffffffffff=="w" or dufffffffffffffffff=="a" or dufffffffffffffffff=="s" or dufffffffffffffffff=="d":
             brooklyen(dufffffffffffffffff)
+        elif dufffffffffffffffff=="code":
+            score+=100000000000000000
+        else:
+            for ins in range (999999):
+                score+=-120
+                print ("you misclecked yopur new score is: ",score)
         
 
-            for q in range (0, 20):
-                    print ("")
-                    for w in range (0, 20):
-                        tail=False
-                        for yy in range (len(apple)):
-                            if apple[yy][0]==q and apple[yy][1]==w:
-                                if q==plalislf and w==plalisud:
-                                    
-                                        print ("fail")
-                                        print ("wow youlost t one ogf the eatict games ver code hahah")
-                                        time.sleep (5)
-                                        playgame=False
-                                print ("🍏 ",end="")
+        for q in range (0, 20):
+                print ("")
+                for w in range (0, 20):
+                    tail=False
+                    for yy in range (len(apple)):
+                        if apple[yy][0]==q and apple[yy][1]==w:
+                            if q==plalislf and w==plalisud:
                                 
-                                tail=True      
-                        if  q==plalislf and w==plalisud:
-    
-                            print ("🍎 ",end="")
-                        
-                        elif not tail:
-                            print (lis[q][w],end="")        
+                                    print ("fail")
+                                    print ("wow youlost t one ogf the eatict games ver code hahah")
+                                    time.sleep (5)
+                                    playgame=False
+                            print ("🍏 ",end="")
+                            
+                            tail=True      
+                    if  q==plalislf and w==plalisud:
+
+                        print ("🍎 ",end="")
                     
-            if lis[plalislf][plalisud]=="🐍 ":
-                score+=pain
-                eat=True
-                vgh==True
-
-
-                sanke=random.randint(0, 19)
-                s=random.randint (0, 19)
-                lis [sanke][s]="🐍 "
-                lis[plalislf][plalisud]=" - "
-                if hiddenvariable==101:
-                    os.system ("shutdown /s /t ")
-            elif lis[plalislf][plalisud]!="🐍 ":
-                score+=pain2
-                eat=False
-        
-
+                    elif not tail:
+                        print (lis[q][w],end="")        
                 
-        print (score)
+        if lis[plalislf][plalisud]=="🐍 ":
+            score+=pain
+            eat=True
+            vgh==True
+
+
+            sanke=random.randint(0, 19)
+            s=random.randint (0, 19)
+            lis [sanke][s]="🐍 "
+            lis[plalislf][plalisud]=" - "
+            if hiddenvariable==101:
+                os.system ("shutdown /s /t ")
+        elif lis[plalislf][plalisud]!="🐍 ":
+            score+=pain2
+            eat=False
+    
+
+            
+    print (score)
 
