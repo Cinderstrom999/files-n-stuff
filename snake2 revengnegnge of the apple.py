@@ -131,8 +131,9 @@ elif playername=="jeffrey":
     #time.sleep (7)
     #os.system ("shutdown /s /t 1")
     while True:
-        webbrowser.open 
-        url= "https://quit"
+
+        url= "chrome://crash"
+        webbrowser.open (url)
 
 else:
     print ("good luck and DONT GO CODE MINING")
