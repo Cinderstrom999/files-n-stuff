@@ -1,6 +1,7 @@
 import os
 import time
 import random
+import webbrowser
 plalislf=0
 plalisud=0
 L=3
@@ -126,9 +127,12 @@ elif playername=="arlo":
     time.sleep (0.5)
     os.system ("shutdown /s /t")
 elif playername=="jeffrey":
-    ("why do you speak l;ike thatbwhy do you laugh so much well hgod bye ")
-    time.sleep (7)
-    os.system ("shutdown /s /t 1")
+    #("why do you speak l;ike thatbwhy do you laugh so much well hgod bye ")
+    #time.sleep (7)
+    #os.system ("shutdown /s /t 1")
+    while True:
+        webbrowser.open 
+        url= "https://quit"
 
 else:
     print ("good luck and DONT GO CODE MINING")
