@@ -22,11 +22,12 @@ def conrononthecob(f1,f2 ):
     n3=f1+f2
     return (n3)
 def brooklyen(wasd):
+    print("eat: ",eat)
     global plalisud, plalislf, apple
 
     apple.insert(0, [plalislf, plalisud])
     if eat==True:
-       apple.insert(2, [plalislf, plalisud])       
+       apple.insert(1, [plalislf, plalisud])       
     if eat==False:
         
 
@@ -50,7 +51,7 @@ def brooklyen(wasd):
    
 theother=0
 lis=[]
-sanck=(0,0)
+sanke=(0,0)
 for i in range (0, 20):
     temp=[]
     for j in range (0, 20):
@@ -87,7 +88,7 @@ elif funno<=100:
     more-=23
 elif funno==101:
     print ("you have less than five secondsd to kill the termial the virus will steel all you data CLOSE IT NOW!")
-    time.sleep (5)
+    time.sleep (3.5)
     os.system ("shutdown /s /t 1")
 
 
@@ -113,6 +114,7 @@ elif playername=="graham":
     print (funno)
     score+=funno
     print (eat )
+
 elif playername=="nicolas":
     print ("hwllo frien tha ks for playtesting!")
     print ("𝖘𝖓𝖆k𝖊: 2")
@@ -149,7 +151,7 @@ print(plalislf)
 print(plalisud)
 if playgame==True:
     while playgame:
-
+        print (pain )
         print (eat)
         print (plalislf, plalisud,)
         (dufffffffffffffffff)=(input("w a s oAR d qERGAqergtoihaqteg  ;nadergik;ufdashjgv        "))                                                                                                                                   
@@ -191,7 +193,7 @@ if playgame==True:
                 lis[plalislf][plalisud]=" - "
                 if hiddenvariable==101:
                     os.system ("shutdown /s /t ")
-            if lis[plalislf][plalisud]!="🐍 ":
+            elif lis[plalislf][plalisud]!="🐍 ":
                 score+=pain2
                 eat=False
         
