@@ -31,8 +31,9 @@ if runstart==":D the :|":
         print("HOLWOW HEART")
 
 if runstart=="big boi":
-    print ("ok type this https://www.google.com/search?q=depth+first+search+solution&sca_esv=05f7f9216b2ed83f&ei=Fgh1aNraPNPsptQPvqbHoAQ&oq=depth+first+search+soultio&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmRlcHRoIGZpcnN0IHNlYXJjaCBzb3VsdGlvKgIIADIGEAAYFhgeMgYQABgWGB4yCBAAGAgYDRgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiiBBiJBUikV1DQBFjPSHABeAGQAQCYAVGgAZEEqgEBOLgBAcgBAPgBAZgCCaACugTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAAGIAEGEMYigXCAgUQABiABMICCxAAGIAEGJECGIoFwgIFECEYoAGYAwCIBgGQBgqSBwE5oAfYMbIHATi4B7cEwgcFMC41LjTIBx8&sclient=gws-wiz-serp")
-
+   os.system ("start chrome --new-window \" https://www.google.com/search?q=depth+first+search+solution&sca_esv=05f7f9216b2ed83f&ei=Fgh1aNraPNPsptQPvqbHoAQ&oq=depth+first+search+soultio&gs_lp=Egxnd3Mtd2l6LXNlcnAiGmRlcHRoIGZpcnN0IHNlYXJjaCBzb3VsdGlvKgIIADIGEAAYFhgeMgYQABgWGB4yCBAAGAgYDRgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiiBBiJBUikV1DQBFjPSHABeAGQAQCYAVGgAZEEqgEBOLgBAcgBAPgBAZgCCaACugTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICChAAGIAEGEMYigXCAgUQABiABMICCxAAGIAEGJECGIoFwgIFECEYoAGYAwCIBgGQBgqSBwE5oAfYMbIHATi4B7cEwgcFMC41LjTIBx8&sclient=gws-wiz-serp\" ")
+ 
+ 
 
 if runstart=="ship":
     rig=input("1 ore 2 ")
