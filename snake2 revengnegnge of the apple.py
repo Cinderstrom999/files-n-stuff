@@ -10,7 +10,7 @@ L=3
 fake=False
 playgame=True
 eat=False
-(playere)=input("secredfgirstryu code?")
+(playere)=input("secredfgirstryu code?  ")
 if playere=="tax":
     fake=True
 if fake==False:
@@ -27,6 +27,7 @@ po=-1
 pi=-5
 q=-23
 score=0
+butter=False
 def conrononthecob(f1,f2 ):
     n3=f1+f2
     return (n3)
@@ -71,7 +72,7 @@ sanke=random.randint(0, 19)
 s=random.randint (0, 19)
 lis [sanke][s]="🐍 "
 theothers=random.randint(0,1)
-(playername)=input("whats ur name?")
+(playername)=input("whats ur name?  ")
 
 funno=random.randint(0,101)
 
@@ -133,12 +134,13 @@ elif playername=="ice":
     pain=0
     pain2=0
     score=0
+    butter=True
     food=True
 elif playername=="nicolas":
     print ("hwllo frien tha ks for playtesting!")
     print ("𝖘𝖓𝖆k𝖊: 2")
     print ("᥅ꫀꪜꫀꪀꫀꪀᧁꫀ ꪮᠻ ꪻꫝꫀ ꪖρρꪶꫀ")
-    print ("your score is this number (my recod is 597)",score)
+    print ("your score is this number (my recod is 1042)",score)
 elif playername=="arlo":
     ("java is better!")
     time.sleep (0.5)
@@ -199,7 +201,7 @@ if playgame==True:
             score+=100000000000000000
         elif dufffffffffffffffff=="ezmode" or dufffffffffffffffff=="ez mode":
             print ("ok ")
-        if playername=="ice" and score>=-1:
+        if butter==True and score>=-1:
             print ("you gat the butter score itsd better yeeeeeeeeeeeeeeeeeeehaw", betterscore)
             pain=0
             pain2=0
